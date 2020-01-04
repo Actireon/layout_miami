@@ -8,6 +8,16 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+html {
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0; }
+
+body {
+  font-family: roboto, sans-serif;
+  background: #eee; }
+
 .header {
   height: 700px;
   background: url("../images/header.png") no-repeat;
@@ -25,20 +35,20 @@ h1 {
     .header-contact__img {
       width: 115px;
       height: 76px; }
-    .header-contact__phone, .header-contact__order {
-      font: bold 12px roboto, sans-serif;
-      letter-spacing: 2px;
-      color: #fff;
-      text-transform: uppercase;
+    .header-contact__order {
       position: relative; }
-    .header-contact__order::after {
-      content: "";
-      position: absolute;
-      top: 24px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #fff; }
+      .header-contact__order::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        -webkit-transition: width 0.1s cubic-bezier(0, 0, 1, 1) 100ms;
+        transition: width 0.1s cubic-bezier(0, 0, 1, 1) 100ms; }
+      .header-contact__order:hover::after {
+        width: 0; }
   .header-title {
     width: 328px;
     height: 121px;
@@ -60,6 +70,11 @@ h1 {
         background-color: #fff; }
   .header .nav {
     margin-top: 105px; }
+    .header .nav__item--active {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 10px 24px;
+      margin-top: -8px; }
     .header .nav__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -77,13 +92,6 @@ h1 {
       letter-spacing: 2px; }
       .header .nav__link:hover {
         color: #9fadc2; }
-
-* {
-  margin: 0; }
-
-body {
-  font-family: roboto, sans-serif;
-  background: #eee; }
 
 .main {
   margin: 104px 120px 0; }
@@ -104,6 +112,8 @@ body {
   .info__link {
     text-decoration: none;
     color: #0075ff; }
+    .info__link:hover {
+      border-bottom: 2px solid #0075ff; }
   .info-article {
     width: 500px; }
     .info-article__text-1 {
@@ -164,7 +174,12 @@ body {
     text-decoration: none;
     margin: 0 43%; }
     .gallery__button:hover {
-      cursor: pointer; }
+      color: #fff;
+      background-color: #00acdc;
+      border: none;
+      cursor: pointer;
+      -webkit-transition: color 200ms ease-in-out;
+      transition: color 200ms ease-in-out; }
 
 .consultation {
   margin-top: 173px; }
@@ -250,7 +265,10 @@ body {
     border-radius: 8px;
     color: #fff; }
     .consultation__button:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background: #0067df;
+      -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
 
 .testimonials {
   margin-top: 152px; }
@@ -386,7 +404,10 @@ body {
     border-radius: 8px;
     color: #fff; }
     .contact__button:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background: #0067df;
+      -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
   .contact__area {
     width: 413px;
     height: 144px;
