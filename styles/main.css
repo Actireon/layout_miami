@@ -24,7 +24,9 @@ body {
   background-size: cover;
   background-position: 50% 100%;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear; }
   .header-contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -111,7 +113,9 @@ body {
     position: absolute;
     left: 0;
     bottom: 50px;
-    right: 0; }
+    right: 0;
+    max-width: 1500px;
+    margin: 0 auto; }
     .header .nav--on {
       display: block;
       margin-top: 55px; }
@@ -165,7 +169,9 @@ body {
     font-size: 22px; }
   .header--mobile {
     background: #0075ff;
-    position: relative; } }
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; } }
 
 @media (max-width: 400px) {
   .header-title {
@@ -176,7 +182,8 @@ body {
 
 .main {
   max-width: 1017px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 30px; }
 
 .about {
   display: -webkit-box;
@@ -273,7 +280,7 @@ body {
     margin: 0 auto; }
     .gallery__button:hover {
       color: #fff;
-      background-color: #00acdc;
+      background-color: #0075ff;
       border: none;
       cursor: pointer;
       -webkit-transition: color 200ms ease-in-out;
@@ -339,21 +346,17 @@ body {
     border-radius: 8px;
     padding-left: 17px;
     margin-bottom: 16px;
-    outline: none; }
+    outline: none;
+    font: 14px roboto, sans-serif; }
     .consultation__inp::-webkit-input-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .consultation__inp::-moz-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .consultation__inp:-ms-input-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .consultation__inp::-ms-input-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .consultation__inp::placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .consultation__inp:focus {
       background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f7));
@@ -506,21 +509,17 @@ body {
     border-radius: 8px;
     padding-left: 17px;
     margin-bottom: 16px;
-    outline: none; }
+    outline: none;
+    font: 14px roboto, sans-serif; }
     .contact__inp::-webkit-input-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .contact__inp::-moz-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .contact__inp:-ms-input-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .contact__inp::-ms-input-placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .contact__inp::placeholder {
-      font: 14px roboto, sans-serif;
       color: #b9c1ce; }
     .contact__inp:focus {
       background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f7));
