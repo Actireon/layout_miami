@@ -132,7 +132,13 @@ body {
 
 @media (max-width: 400px) {
   .header-title {
-    width: 100%; } }
+    width: 70%; }
+    .header-title__text {
+      font-size: 40px; } }
+
+@media (max-width: 320px) {
+  .header-title__text {
+    font-size: 30px; } }
 
 .main {
   margin: 104px 120px 0; }
