@@ -244,7 +244,8 @@ body {
     border: 2px solid #0075ff;
     border-radius: 8px;
     text-decoration: none;
-    margin: 0 43%; }
+    display: block;
+    margin: 0 auto; }
     .gallery__button:hover {
       color: #fff;
       background-color: #00acdc;
@@ -566,5 +567,13 @@ body {
     height: 76px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+
+@media (max-width: 350px) {
+  .info__text,
+  .gallery__header,
+  .consultation__header,
+  .testimonials__header,
+  .contact__header {
+    font-size: 35px; } }
 
 /*# sourceMappingURL=main.css.map */
