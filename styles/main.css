@@ -36,7 +36,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 24px; }
+    padding-top: 24px;
+    max-width: 1500px;
+    margin: 0 auto; }
     .header-contact__phone_link {
       font: bold 12px roboto, sans-serif;
       text-decoration: none;
@@ -288,11 +290,14 @@ body {
 
 @media (max-width: 600px) {
   .gallery__photo_1, .gallery__photo_2, .gallery__photo_3, .gallery__photo_4, .gallery__photo_5, .gallery__photo_6 {
-    height: 175px; } }
+    height: 175px;
+    margin-top: 20px; }
+  .gallery__section:nth-child(1), .gallery__section:nth-child(3), .gallery__section:nth-child(5) {
+    grid-template-columns: 100%; } }
 
 @media (max-width: 450px) {
   .gallery__photo_1, .gallery__photo_2, .gallery__photo_3, .gallery__photo_4, .gallery__photo_5, .gallery__photo_6 {
-    height: 110px; } }
+    height: 140px; } }
 
 .consultation {
   margin-top: 152px; }
