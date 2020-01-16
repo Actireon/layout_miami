@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: roboto, sans-serif;
-  background: #eee; }
+  background: #f2f2f2; }
 
 @-webkit-keyframes appearance-header {
   10% {
@@ -625,5 +625,12 @@ body {
   .testimonials__header,
   .contact__header {
     font-size: 35px; } }
+
+@media (max-width: 870px) {
+  .gallery,
+  .consultation,
+  .testimonials,
+  .contact {
+    margin-top: 88px; } }
 
 /*# sourceMappingURL=main.css.map */
