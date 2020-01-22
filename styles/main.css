@@ -206,6 +206,10 @@ body {
     .header-title__text {
       font-size: 40px; } }
 
+@media (max-height: 450px) {
+  .header {
+    height: 140vh; } }
+
 .main {
   max-width: 1017px;
   margin: 0 auto;
